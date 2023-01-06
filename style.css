@@ -119,14 +119,16 @@ header nav .menu li {
 /* MAIN */
 
 .main {
-    width: 75%;
+    width: 100%;
     display: inline-block;
     margin-top: 650px;
     margin-left: 20px;
 }
 
 .about-me {
+    width: 95%;
     font-size: 22px;
+    word-spacing: 3px;
     margin-bottom: 20px;
     padding: 30px;
     height: 300px;
@@ -136,6 +138,23 @@ header nav .menu li {
 }
 
 .about-me h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.my-work {
+    width: 95%;
+    font-size: 22px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+    padding: 30px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #7b00ff;
+    color: #ffffff;
+}
+
+.my-work h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
