@@ -1,0 +1,141 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+/* HEADER */
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #8679c7;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav .menu {
+    list-style-type: none;
+}
+
+header nav .menu li {
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+.menu li a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #5432fd;
+}
+
+/* mouse over link */
+.menu li a:hover {
+    color: whitesmoke;
+}
+
+/* visited link */
+.menu li a:visited {
+    color: rgb(138, 255, 138);
+}
+
+.menu li a:link {
+    color: #5432fd;
+}
+
+/* selected link */
+.menu li a:active{
+    color: yellow;
+}
+
+/* BACKGROUND IMAGE */
+
+.main_photo {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("assests/images/avatar.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* banner with name and job */
+
+.content {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.content .name {
+    font-size: 40px;
+}
+
+.content .job {
+    font-size: 30px;
+    display: flex;
+}
+
+/* typing text animation */
+
+.content .job .typing-text {
+    margin-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 10s steps(33) infinite;
+}
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 33ch;
+    }
+    100% {
+        width: 0ch;
+    }
+}
+
+/* MAIN */
+
+.main {
+    width: 75%;
+    display: inline-block;
+    margin-top: 650px;
+    margin-left: 20px;
+}
+
+.about-me {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding: 30px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #7b00ff;
+    color: #ffffff;
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
