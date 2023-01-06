@@ -148,6 +148,7 @@ hr {
 }
 
 .about-me h2 {
+    text-align: center;
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -166,6 +167,54 @@ hr {
 }
 
 .my-work h2 {
+    text-align: center;
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+/* contact me section */
+.contact-me {
+    width: 95%;
+    font-size: 22px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+    padding: 30px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #7b00ff;
+    color: #ffffff;
+}
+
+.contact-me h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: white;
+}
+
+/* remove bullet points to be replaced later */
+.contact-me ul {
+    list-style: none;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* emoji for email */
+.contact-me ul #email {
+    list-style-position: inside;
+    list-style-type: '📧';
+}
+
+/* emoji for github */
+.contact-me ul #github {
+    list-style-position: inside;
+    list-style-type: '✎';
+}
+
+.contact-me #email a {
+    color: white !important;
+}
+
+.contact-me #github a {
+    color: white;
 }
