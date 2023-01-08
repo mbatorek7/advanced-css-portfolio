@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+float calcTriangleArea(float width, float height)
+{
+float result;	
+result=(1.0/2.0)*width*height;	
+  return result;
+}
+
+int main(void)
+{
+  float width, height;
+  int counter;
+  float area;
+  float calcTriangleArea(float width, float height);
+  printf("To stop computation, please enter a width or height of 0\n");
+
+  counter = 1;
+  while(height !=0 || width !=0) {
+    printf("Please enter triangle #%d's width: ", counter);
+    scanf("%f", &width);
+    if(width == 0) {
+	break;	
+    }
+    printf("Please enter triangle #%d's height: ", counter);
+    scanf("%f", &height);
+    if(height == 0) {
+    break; 
+    }
+float area=calcTriangleArea(width,height);
+    printf("The area of triangle #%d is %2.3f\n", counter, area);
+counter+=1;
+  } 
+  return 0;
+}

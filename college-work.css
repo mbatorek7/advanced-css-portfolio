@@ -1,0 +1,82 @@
+/* ------------------------------------MOVING BACKGROUND STYLING-------------------------------- */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/* ------------------------------------END MOVING BACKGROUND STYLING-------------------------------- */
+
+/* main header */
+.title-page{
+    color: whitesmoke;
+    font-size: 75px;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+/* syling for intro paragraph to my work */
+.intro {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 500px;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #fff,
+      0 0 82px #fff,
+      0 0 92px #fff,
+      0 0 102px rgb(17, 0, 255),
+      0 0 151px rgb(17, 0, 255);
+    text-transform: uppercase;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+/* example code section */
+.exampleCode {
+    color: white;
+    padding-top: 10px;
+    padding-left: 1100px;
+    font-size: 35px;
+}
+
+/* style for paragraphs about c programming */
+.c {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 35px;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #fff,
+      0 0 82px #fff,
+      0 0 92px #fff,
+      0 0 102px rgb(17, 0, 255),
+      0 0 151px rgb(17, 0, 255);
+    text-transform: uppercase;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+/* styling for file links */
+.exampleLink a {
+    color: whitesmoke;
+    padding-left: 800px;
+    font-size: 30px;
+}
+
+.exampleLink a:hover {
+    color: rgb(0, 85, 255);
+}

@@ -1,0 +1,60 @@
+/* question 1: Is it a palindrome?*/
+#include <stdio.h>
+#include <string.h>
+#define MAXLENGTH 100
+
+
+void LookForLetters(char *p1, char *test) {
+    int length = strlen(p1);
+    int j = 0;
+    for(int i = 0; i < length; i++) 
+    {
+        p1[i] = tolower(p1[i]);
+    }
+    for(int i = 0; i < length; i++) 
+    {
+        if(isalpha(p1[i]))
+        {
+            test[j] = p1[i];
+            j++;
+        }
+    }
+}
+
+int main (void)
+{
+  char inputString[MAXLENGTH];
+  char reverseString[MAXLENGTH];
+  char convertString[MAXLENGTH];
+  int i; 
+  int palindrome;
+  
+
+  printf("Please enter a word or phrase without punctuation:");
+  gets(inputString);
+  
+  LookForLetters(inputString, convertString);
+  
+  
+  for(i=0; i<strlen(convertString); i++)
+  {
+    reverseString[strlen(convertString)-i-1]=convertString[i];
+  }
+  reverseString[strlen(convertString)]='\0';
+  
+  printf("Original String: %s\n",inputString);
+  printf("Filtered String: %s\n",convertString);
+  printf("Reversed String: %s\n",reverseString);
+  
+  palindrome=strcmp(convertString, reverseString);
+  if(palindrome==0)
+  {
+    printf("That is a palindrome!"); 
+  }
+  else
+  {
+    printf("That is not a palindrome.");
+  }
+    
+  return 0;
+}

@@ -208,6 +208,25 @@ header nav .menu li {
     color: #ffffff;
 }
 
+.college-work {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+.college-work:hover {
+    color: rgb(255, 230, 0);
+    opacity: 100%;
+}
+
 /* contact me section */
 .contact-me {
     width: 95%;
