@@ -9,6 +9,57 @@ body {
     background-color: #d9dcd6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------------------------------SCROLL TO THE TOP FEATURE ----------------------------------------------------------------- */
+.stt {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgb(128, 128, 255) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+    box-shadow: 0 0.25rem 0.5rem 0 gray;
+    opacity: 0.7;
+}
+
+.stt:hover {
+    opacity: 0.8;
+}
+
+.stt:focus {
+    opacity: 0.9;
+}
+
+.stt:active {
+    opacity: 1;
+}
+
+/* --------------------------------------------------------END SCROLL TO THE TOP FEATURE ----------------------------------------------------------------- */
+
+/* --------------------------------------------------------ZOOM FEATURE ON IMAGES ----------------------------------------------------------------- */
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+  
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+/* --------------------------------------------------------END ZOOM FEATURE ON IMAGES ----------------------------------------------------------------- */
+
+/* create horizontal break between articles */
+hr {
+    clear: both;
+    visibility: hidden;
+}
+
 /* HEADER */
 header {
     padding: 20px;
@@ -39,7 +90,7 @@ header nav .menu {
 header nav .menu li {
     display: inline-block;
     margin-left: 25px;
-
+    font-weight: bold;
 }
 
 /* font size and color of links on nav bar */
@@ -53,7 +104,6 @@ header nav .menu li {
 .menu li a:hover {
     color: whitesmoke;
 }
-
 
 /* .menu li a:visited {
     color: rgb(138, 255, 138);
@@ -69,7 +119,7 @@ header nav .menu li {
 }
 
 /* BACKGROUND IMAGE OF ME*/
-.main_photo {
+.hero-image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -78,24 +128,12 @@ header nav .menu li {
     background-position: center;
 }
 
-/* adjust example photos to appear to the left */
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-/* create horizontal break between articles */
-hr {
-    clear: both;
-    visibility: hidden;
-}
-
 /* banner with name and job */
 .content {
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    top: 30%;
-    left: 2%;
+    top: 37%;
+    left: 3%;
 }
 
 .content .name {
@@ -107,7 +145,7 @@ hr {
     display: flex;
 }
 
-/* typing text animation */
+/* --------------------------------------------------------TYPING ANIMATION ----------------------------------------------------------------- */
 .content .job .typing-text {
     margin-left: 15px;
     white-space: nowrap;
@@ -125,6 +163,7 @@ hr {
         width: 0ch;
     }
 }
+/* --------------------------------------------------------END TYPING ANIMATION ----------------------------------------------------------------- */
 
 /* MAIN CONTENT OF PAGE */
 .main {
@@ -147,7 +186,10 @@ hr {
     color: #ffffff;
 }
 
-.about-me h2 {
+/* adjust headers for each section */
+.about-me h2,
+.contact-me h2,
+.my-work h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 36px;
@@ -166,12 +208,6 @@ hr {
     color: #ffffff;
 }
 
-.my-work h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 /* contact me section */
 .contact-me {
     width: 95%;
@@ -179,17 +215,10 @@ hr {
     word-spacing: 3px;
     margin-bottom: 20px;
     padding: 30px;
-    height: 300px;
+    height: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #7b00ff;
     color: #ffffff;
-}
-
-.contact-me h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: white;
 }
 
 /* remove bullet points to be replaced later */
@@ -211,10 +240,7 @@ hr {
     list-style-type: '✎';
 }
 
-.contact-me #email a {
-    color: white !important;
-}
-
-.contact-me #github a {
+.contact-me #email a,
+.contact-me #github a  {
     color: white;
 }

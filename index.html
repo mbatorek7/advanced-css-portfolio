@@ -10,6 +10,9 @@
 
     <!-- Title on tab -->
     <title>Personal Portfolio</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/star.png">
 </head>
 
 <body>
@@ -33,12 +36,12 @@
     </header>
 
     <!-- photo of me -->
-    <div class = "main_photo"></div>
+    <div class = "hero-image"></div>
 
     <!-- banner with my name and job -->
     <div class = "content">
         <div class = "text-content">
-            <div class = "name">Hello, I'm Maggie.</div>
+            <div class = "name">Hi, I'm Maggie.</div>
             <div class="job">
                 <span>And I'm a</span>
                 <div class="typing-text">
@@ -71,6 +74,7 @@
                         and help make people's lives easier.
                     </p>
                 </section>
+                <!-- end about me -->
 
                 <!-- previous work I have done -->
                 <section id="my-work" class="my-work">
@@ -83,20 +87,19 @@
                             many different queries. Some examples are shown below.
                         </p>
 
-                        <br>
-
                         <img src="./assets/images/examp1.jpg" 
                         alt="Query that selects the postal codes of people that live in CA"
-                        class="float-left"
-                        width="500" height="200"
+                        class="zoom"
+                        width="550" height="300"
                         />
 
                         <img src="./assets/images/lab6prob.png" 
-                        alt="Query to create procedure to update email">
+                        alt="Query to create procedure to update email"
+                        class="zoom">
                     </article>
 
                     <!-- create invisible break between articles -->
-                    <hr size="50">
+                    <hr size="30">
 
                     <article>
                         <h3>HTML & CSS</h3>
@@ -107,16 +110,15 @@
                             styling and positioning.
                         </p>
 
-                        <br>
-
                         <!-- added link to github repository of first hw -->
                         <a href="https://github.com/mbatorek7/hw1"><img src="./assets/images/hw1.png" 
-                        class="float-left"
+                        class="zoom"
                         width="400" height="500"/></a>
                     </article>
                 </section>
+                <!-- end my work -->
                 
-
+                <!-- contact me -->
                 <section id="contact-me" class="contact-me">
                     <h2>Contact Me</h2>
                     <ul>
@@ -128,13 +130,14 @@
                             <a href="https://github.com/mbatorek7">Find all GitHub work here!</a>
                         </li>
                     </ul>
-
                 </section>
+                <!-- end contact me -->
             </main>
         </div>
-
     </div>
 
-</body>
+    <!-- scroll to the top button -->
+    <a href='#' class="stt" title="scroll to top"></a>
 
+</body>
 </html>
