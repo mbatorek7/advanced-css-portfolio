@@ -80,3 +80,12 @@
 .exampleLink a:hover {
     color: rgb(0, 85, 255);
 }
+
+/* .palindrome {
+    width: 70%;
+    height: auto;
+    margin-left: 35px;
+    margin-right: 300px;
+    margin-bottom: 300px;
+    background-image: url("assets/images/palindrome.png");
+} */
